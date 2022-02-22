@@ -1,3 +1,8 @@
 body {
     background-color: blanchedalmond;
 }
+.guess_btn {
+ color: white;   
+ padding: 0.35em;
+ 
+}

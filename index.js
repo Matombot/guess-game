@@ -7,17 +7,20 @@ const guess_btn = document.querySelector(".guess_btn");
 const message = document.querySelector(".message");
 
 function guessBtnClicked(){
-const guessedNumber =Number(number_guess.value);
+const guessedNumber = Number(number_guess.value);
 if  (guessedNumber < randomNumber) {
 
-    message.innerHTML ="Your guess istoo low" ;
+    message.innerHTML ="Your guess is too low" ;
 }
 else if (guessedNumber > randomNumber) {
     message.innerHTML ="Your guess is too high" ;
 }
 else{
-    message.innerHTML ="Correct , the scret number is ${guessedNumber}"
+    message.innerHTML =`Correct , the secret number is ${guessedNumber}`
 }
 
-guess_btn.addEventListener('click', guessBtnClicked)
 }
+setTimeout (function(){
+    message.innerHTML = "" ;
+}, 2000);
+guess_btn.addEventListener('click', guessBtnClicked)
