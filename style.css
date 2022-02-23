@@ -1,14 +1,18 @@
 body {
-    background-color: blanchedalmond;
+    background-color: salmon;
 }
 .guess_btn {
  color: black;   
- padding: 0.35em;
- border: 0.35em;
+ padding: 10px;
+ border: 5em;
+ text-align: center;
+ background-color: yellow;
+ border-radius: 5px;
  
 }
 .message {
     color: blue;
+    margin: 4px;
 }
 .container {
     padding: 2em;
