@@ -8,7 +8,7 @@ function guessBtnClicked(){
 const guessedNumber = Number(number_guess.value);
 
 if (guessedNumber > 100 || guessedNumber <= 0){
-    message.innerHTML = "error , out of range" ;
+    message.innerHTML = "Error , out of range" ;
     // alert ("error , out of range")
 }
  else if  (guessedNumber < randomNumber) {
@@ -22,9 +22,9 @@ else if (guessedNumber > randomNumber) {
 else{
     message.innerHTML =`Correct , the secret number is ${guessedNumber}`
 }
-setTimeout (function (){
-    message.innerHTML = "" ;
-}, 5000);
+//setTimeout (function (){
+//   message.innerHTML = "" ;
+//}, 5000);
 }
 
 setTimeout (function refresh(){
