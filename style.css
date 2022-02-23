@@ -4,8 +4,12 @@ body {
 .guess_btn {
  color: black;   
  padding: 0.35em;
+ border: 0.35em;
  
 }
 .message {
     color: blue;
+}
+.container {
+    padding: 2em;
 }
