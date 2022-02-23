@@ -1,6 +1,4 @@
-//const randomElem = document.querySelector(".random");
 let randomNumber = Math.ceil((Math.random() * 100))
-//randomElem.innerHTML =randomNumber;
 
 const number_guess= document.querySelector(".number_guess");
 const guess_btn = document.querySelector(".guess_btn");
@@ -18,9 +16,9 @@ else if (guessedNumber > randomNumber) {
 else{
     message.innerHTML =`Correct , the secret number is ${guessedNumber}`
 }
-
-}
 setTimeout (function(){
     message.innerHTML = "" ;
-}, 2000);
+}, 5000);
+}
+
 guess_btn.addEventListener('click', guessBtnClicked)

@@ -2,7 +2,10 @@ body {
     background-color: blanchedalmond;
 }
 .guess_btn {
- color: white;   
+ color: black;   
  padding: 0.35em;
  
+}
+.message {
+    color: blue;
 }
