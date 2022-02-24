@@ -27,7 +27,12 @@ function guessBtnClicked() {
         }, 5000);
 
     }
+setTimeout(function refresh() {
+    message.innerHTML = "";
+}, 3000);
 }
 
-
 guess_btn.addEventListener('click', guessBtnClicked)
+//setTimeout(function guessBtnClicked() {
+  //  message.innerHTML = "New game started !";
+//}, 3000);
