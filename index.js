@@ -4,7 +4,7 @@ const number_guess = document.querySelector(".number_guess");
 const guess_btn = document.querySelector(".guess_btn");
 const message = document.querySelector(".message");
 
-function guessBtnClicked() {
+const guessBtnClicked = () => {
     const guessedNumber = Number(number_guess.value);
 
     if (guessedNumber > 100 || guessedNumber <= 0) {
@@ -29,7 +29,7 @@ function guessBtnClicked() {
     }
 setTimeout(function refresh() {
     message.innerHTML = "";
-}, 3000);
+}, 5000);
 }
 
 guess_btn.addEventListener('click', guessBtnClicked)
